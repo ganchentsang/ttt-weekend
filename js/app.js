@@ -19,10 +19,10 @@ let board, turn, winner
 
 /*------------------------ Cached Element References ------------------------*/
 
+// initialized 'sqaures' which stores the 9 different elements that make up the game
 const squares = document.querySelectorAll('.square')
+// intialized 'message' which displays the game status
 const message = document.querySelector('#message')
-
-const resetButton = document.getElementById('reset-button')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
