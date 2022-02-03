@@ -28,6 +28,35 @@ const message = document.querySelector('#message')
 
 
 
-
 /*-------------------------------- Functions --------------------------------*/
 
+// called the initialize function
+init ()
+
+// created the init function and added instructions
+function init() {
+  // inserted different numbers into the starting variables
+  board = [null, null, null, null, null, null, null, null, null]
+  turn = 1
+  winner = null
+  // called the render function
+  render()
+}
+
+// initialized the render function and added instructions
+function render() {
+  // added a forEach method to change the colors of the cells when clicked
+  board.forEach((cell, idx) => {
+    let cellColor
+    if (cell === 1) {
+      cellColor == 'green'
+    }
+    else if (cell === -1) {
+      cellColor = 'red'
+    }
+    else if (cell === null) {
+      cellColor = 'white'
+    }
+    squares[idx].getElementsByClassName.background = cellColor
+  })
+}
